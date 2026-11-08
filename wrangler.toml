@@ -9,4 +9,17 @@ binding = "ASSETS"
 [vars]
 APP_NAME = "XYNARA"
 
-# ADMIN_PASSWORD is a SECRET in Dashboard, not here. Add it as Secret: ADMIN_PASSWORD = AuraNandu_2012
+# --- D1 DATABASE - THIS WAS MISSING ---
+[[d1_databases]]
+binding = "DB"
+database_name = "xynara-db"
+database_id = "4a12543d-1316-408c-80dd-4dc32fd16c98"
+
+# --- DURABLE OBJECT FOR CALLS ---
+[[durable_objects.bindings]]
+name = "ROOM"
+class_name = "ChatRoom"
+
+[[migrations]]
+new_classes = ["ChatRoom"]
+old_classes = []
