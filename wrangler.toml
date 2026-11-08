@@ -1,0 +1,12 @@
+name = "xynara"
+main = "worker/index.ts"
+compatibility_date = "2024-10-01"
+
+[assets]
+directory = "./frontend"
+binding = "ASSETS"
+
+[vars]
+APP_NAME = "XYNARA"
+
+# ADMIN_PASSWORD is a SECRET in Dashboard, not here. Add it as Secret: ADMIN_PASSWORD = AuraNandu_2012

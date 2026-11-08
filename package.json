@@ -1,0 +1,8 @@
+{
+  "name": "xynara-perfect",
+  "private": true,
+  "version": "4.0.0",
+  "type": "module",
+  "scripts": { "deploy": "wrangler deploy", "db:migrate": "wrangler d1 migrations apply xynara-db --remote" },
+  "devDependencies": { "wrangler": "^3.80.0", "typescript": "^5.6.2" }
+}
